@@ -29,7 +29,7 @@ Retorna um array com todos os mouses cadastrados
     {
         "id": 1,
         "nome": "GPRO SuperLight",
-        "Preço": 800
+        "preco": 800
     }
 ]
 ```
@@ -55,7 +55,7 @@ Retornar os detalhes do mouse com o `id` informado como parâmetro de path.
     {
         "id": 1,
         "nome": "GPRO SuperLight",
-        "Preço": 800
+        "preco": 800
     }
 ]
 ```
