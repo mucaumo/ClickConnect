@@ -1,12 +1,18 @@
 package br.com.fiap.clickconnect.model;
 
-import java.util.Random;
+import jakarta.persistence.Entity;
+import jakarta.persistence.GeneratedValue;
+import jakarta.persistence.GenerationType;
+import jakarta.persistence.Id;
+import lombok.Data;
 
-public record Mouse(Long id, String nome, String descricao, double preco) {
-    public Mouse(Long id, String nome, String descricao, double preco){
-        this.id = Math.abs(new Random().nextLong());
-        this.nome = nome;
-        this.descricao = descricao;
-        this.preco = preco;
+@Data
+@Entity
+public class Mouse {
+    @Id @GeneratedValue(strategy = GenerationType.AUTO)
+    private Long id;
+    private String nome;
+    private String descricao;
+    private double preco;
     }
-}
+
