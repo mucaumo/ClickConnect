@@ -82,7 +82,7 @@ Adiciona um novo mouse para a página de mouses
 |-----|----|:-----------:|---------|
 |nome|string|✅|Nome do mouse.
 |descricao|string|✅|Descrição do mouse.
-|preco|double|❌|Preço do mouse.
+|preco|double|✅|Preço do mouse.
 
 ```js
 {
